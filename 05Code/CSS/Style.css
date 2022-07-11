@@ -54,11 +54,11 @@ a:hover{
 
 .form-register a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .form-register a:hover{
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .buttons:hover{
     opacity:0.7;
@@ -69,6 +69,6 @@ a:hover{
     border: none;
     padding: 12px;
     color: white;
-    margin: 16px;
+    margin: 16px 0;
     font-size: 16px;
 }
