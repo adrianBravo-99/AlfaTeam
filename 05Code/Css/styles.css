@@ -1,0 +1,11 @@
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+}
+a{
+    color: #0f0f68;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
