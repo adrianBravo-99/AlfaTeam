@@ -3,16 +3,14 @@ body {
     overflow-x: hidden;
 }
 
-header{
+header {
 	min-height: 60px;
 }
-
 
 #menu a, a1{
      font-size: 25px;
      font-weight: 600;
 }
-
 
 footer {
     background: #1b2a4e;
@@ -44,6 +42,9 @@ nav ul li a:hover{
 	background-color:#4C92F0;
 }
 
+nav {
+    background: #F5F5F5;
+}
 
 #idmenu li a{
   display: block;
@@ -51,11 +52,18 @@ nav ul li a:hover{
   min-width: 100px;
 }
 
-
 #idmenu li{
   float: center;
   text-align:center
 }
+
+img {
+    width: 111px;
+    height: 79px;
+    align-items: "center";
+}
+
+
 
 
 

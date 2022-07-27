@@ -4,14 +4,17 @@
     box-sizing: border-box;
     
 }
+
 body{
     font-family: Calibri, Helvetica, sans-serif;
     background:#F5F5F5;
 }
+
 a{
     color: #0f0f68;
     text-decoration: none;
 }
+
 a:hover{
     opacity: 0.7;
     text-decoration: underline;
@@ -57,13 +60,16 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
 .form-register a:hover{
     color: white;
     text-decoration: underline;
 }
+
 .buttons:hover{
     opacity:0.7;
 }
+
 .form-register .buttons {
     width: 100%;
     background: #1f533c;
@@ -72,4 +78,62 @@ a:hover{
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+
+table {
+    width: 200px;
+    border: 0px;
+    text-align: center;;
+}
+
+.font1 {
+    font-size: 50px;
+}
+
+.font2 {
+    font-size: 30px;
+}
+
+.guardar {
+    width: 305px;
+    height: 483px; 
+}
+
+h2 {
+    color: #0B5ED7;
+}
+
+.img1 {
+    width: 95px;
+    height: 101px;
+}
+
+.img2 {
+    width: 94px;
+    height: 93px;
+}
+
+.img3 {
+    width: 80px;
+    height: 92px;
+}
+
+.img4 {
+    width: 84px;
+    height: 93px;
+}
+
+.img5 {
+    width: 240px;
+    height: 240px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.font1 {
+    font-family: Arial;
+    font-size: 45px;
+    color: #0B5ED7;
 }
