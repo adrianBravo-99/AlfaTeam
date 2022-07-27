@@ -86,10 +86,6 @@ table {
     text-align: center;;
 }
 
-.font1 {
-    font-size: 50px;
-}
-
 .font2 {
     font-size: 30px;
 }
@@ -134,6 +130,6 @@ p{
 
 .font1 {
     font-family: Arial;
-    font-size: 45px;
+    font-size: 50px;
     color: #0B5ED7;
 }
