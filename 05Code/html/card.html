@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../css/mainStyle.css" type="text/css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 		<title>Car Rental</title>
-		<script src="../js/validation.js"></script>
+		<script src="../js/validate.js"></script>
 	</head>
 	
 	<body>
@@ -42,13 +42,16 @@
   	<section class="form-register">
 
     <form action="rent.html">
-    <h4>Add a card</h4>
-     Number Tarjet<input class="controls"type="text" id="inputNumero" maxlength="19" autocomplete="off" placeholder="Number tarjet"required>
-     Name<input class="controls" type="text" id="inputNombre" maxlength="19" autocomplete="off" placeholder="Name">
-     Expiration<input class="controls"type="date" id="start" name="trip-start"
-     value="2018-07-22"
-     min="2018-01-01" max="2030-12-31">
-     CVV<input class="controls" type="text" id="inputCCV" maxlength="3" placeholder="CVV">
+		<h4> Add a card </h4>
+        <label for="textfield">Name:</label>
+        <input class="controls" type="text" name="Name" id="Name" placeholder="Name" onBlur="return validateName()" ><br>
+        <label for="textfield">Card Number:</label>
+        <input class="controls" type="text" name="CardNumber" id="CardNumber" placeholder="Card Number" onBlur="validateCardNumber()" ><br>
+        <label for="textfield">Expiration:</label>
+        <input class="controls" type="month" name="Expiration" id="Expiration" placeholder="mm/yy"><br>
+        <label for="textfield">CVV:</label>
+        <input class="controls" type="text" name="CVV" id="CVV" placeholder="CVV" onBlur="validateCVV()" ><br>
+        <br>
     <p>I agree with <a href="#">Terms and Conditions</a></p>
     <input class="buttons" type="submit" value="Save">
   </form></section>
