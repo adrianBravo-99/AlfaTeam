@@ -72,10 +72,19 @@
 		Retirement Date<input class="controls" type="date" id="start" name="trip-start" placeholder="Retirement Date">
 		<input type="time"> 
 		Date of delivery<input class="controls" type="date"  id="start" name="trip-start" placeholder="DateofDelivery"> 
-		Way to pay<input class="controls" type="radio" id="Cash" name="Money" value="Cash">
-		<label for="Cash">Cash</label>
-		<input class="controls" type="radio" id="Card" name="Money" value="Credit/debit card">
-		<label for="Card">Credit/debit card</label>
+		<b>Way to pay</b> 
+		<br>
+		<table>
+			<tr>
+				<td><label for="Cash">Cash</label></td>
+				<td><input class="controls" type="radio" id="Cash" name="Money" value="Cash"></td>
+			</tr>
+			<tr>
+				<td><label for="Card">Credit/debit card</label></td>
+				<td><input class="controls" type="radio" id="Card" name="Money" value="Credit/debit card"></td>
+			</tr>
+		</table>
+
 			<p><a href="Card.html">Add a credit/debit card</a></p>
 			<input class="buttons" type="submit" value="Save">
 			<input class="buttons" type="reset" value="Reset">
