@@ -41,8 +41,8 @@
 		<section class="form-register">
 			<form action="save.html">
 			<h4>Rent a car</h4>
-		   Full Name<input class="controls" type="text" name="txtfullName" id="txtfullName"  placeholder="Full Name" onBlur="return validateRentName()">
-		   Province<select class="controls" id= "cmbProvince" name="cmbProvince" placeholder="Province">
+		   Full Name<input class="controls" type="text" name="txtfullName" id="txtfullName"  placeholder="Full Name" onBlur="return validateRentName()" required>
+		   Province<select class="controls" id= "cmbProvince" name="cmbProvince" placeholder="Province" required>
 			<option value="1">Azuay</option>  
 			<option value="2">Cañar</option>  
 			<option value="3">Loja</option>  
@@ -69,19 +69,19 @@
 			<option value="24">Galápagos</option>  
 		</select> 
 		<input type="time">
-		Retirement Date<input class="controls" type="date" id="start" name="trip-start" placeholder="Retirement Date">
+		Retirement Date<input class="controls" type="date" id="start" name="trip-start" placeholder="Retirement Date" required>
 		<input type="time"> 
-		Date of delivery<input class="controls" type="date"  id="start" name="trip-start" placeholder="DateofDelivery"> 
+		Date of delivery<input class="controls" type="date"  id="start" name="trip-start" placeholder="DateofDelivery" required> 
 		<b>Way to pay</b> 
 		<br>
 		<table>
 			<tr>
 				<td><label for="Cash">Cash</label></td>
-				<td><input class="controls" type="radio" id="Cash" name="Money" value="Cash"></td>
+				<td><input class="controls" type="radio" id="Cash" name="Money" value="Cash" required></td>
 			</tr>
 			<tr>
 				<td><label for="Card">Credit/debit card</label></td>
-				<td><input class="controls" type="radio" id="Card" name="Money" value="Credit/debit card"></td>
+				<td><input class="controls" type="radio" id="Card" name="Money" value="Credit/debit card" required></td>
 			</tr>
 		</table>
 
