@@ -54,7 +54,7 @@ function validateRentName() {
 }
 
 function validateSName() {
-    var expRegSName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var expRegSName = /^[^ÑÁáÉéÍíÓóÚúÜü][^0-9][^#@-_:;,.%$/&][a-zA-Z\s]+$/;
     var SignName = document.getElementById("inputName");
     if (!expRegSName.exec(SignName.value)) {
         alert("Only write letters.");
@@ -65,7 +65,7 @@ function validateSName() {
 }
 
 function validateLName() {
-    var expRegLName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var expRegLName = /^[^ÑÁáÉéÍíÓóÚúÜü][^0-9][^#@-_:;,.%$/&][a-zA-Z\s]+$/;
     var LastName = document.getElementById("inputLname");
     if (!expRegLName.exec(LastName.value)) {
         alert("Only write letters.");
