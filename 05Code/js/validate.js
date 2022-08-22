@@ -50,6 +50,42 @@ function validateRentName() {
         return false;
     } else {
         return true;
+    }
+}
 
+function validateSName() {
+    var expRegSName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var SignName = document.getElementById("inputName");
+    if (!expRegSName.exec(SignName.value)) {
+        alert("Only write letters.");
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function validateLName() {
+    var expRegLName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var LastName = document.getElementById("inputLname");
+    if (!expRegLName.exec(LastName.value)) {
+        alert("Only write letters.");
+        return false;
+    } else {
+        return true;
+    }
+}
+
+$(document).ready(function()) {
+    $('#inputRpassword').keyup(function()){
+        var inputPassword = $('#inputPassword').val();
+        var inputRPassword = $('#inputRPassword').val();
+        if (inputPassword==inputRPassword){
+            $('#error').text('Match');
+        }else{
+            $('#error').text('Do no Match');
+        }
+        if (inputRPassword==""){
+            $('#error').text('Cannot be left blank');
+        }
     }
 }

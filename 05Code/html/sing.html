@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../css/mainStyle.css" type="text/css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 		<title>Car Rental</title>
-		<script src="../js/validation.js"></script>
+		<script src="../js/validate.js"></script>
 	</head>
 	
 	<body>
@@ -31,7 +31,7 @@
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
 						<li class="nav-item"><a  class="nav-link p-6" aria-current="page" href="logIn.html" >Log In</a></li>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="sing.html" >Sing In</a></li>
+						<li class="nav-item"><a class="nav-link" aria-current="page" href="sing.html" >Sign Up</a></li>
 					</ul>
 				</div>
 			</div>
@@ -40,12 +40,13 @@
 	<div class="embed-responsive embed-responsive-21by9">
 		<section class="form-register">
 			<form>
-			<h4>Sing in</h4>
-		   Name<input class="controls" type="text" name="inputName" id="inputName" placeholder="Name" required>
-		   Last name<input class="controls" type="text" name="inputLname" id="inputLname" placeholder="Last Name">
+			<h4>Sign Up</h4>
+		   Name<input class="controls" type="text" name="inputName" id="inputName" placeholder="Name" onBlur="return validateSName()">
+		   Last name<input class="controls" type="text" name="inputLname" id="inputLname" placeholder="Last Name" onBlur="return validateLName()">
 		   Email<input class="controls" type="email" name="inputEmail" id="inputEmail" placeholder="Email">
 		   Password<input class="controls" type="password" name="inputPassword" id="inputPassword" placeholder="Password">
 		   Repeat password<input class="controls" type="password" name="inputRpassword" id="inputRpassword" placeholder="Repeat Password">
+		   <span id="error"></span>
 			<p>2022  All Rigth Reserved <a href="#">Terms and Conditions</a></p>
 			<input class="buttons" type="submit" value="Save">
 		</form></section>
