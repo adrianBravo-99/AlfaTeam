@@ -41,3 +41,15 @@ function validateExpiration(campo) {
           return false;
     }
 }
+
+function validateRentName() {
+    var expRegRName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var RentName = document.getElementById("txtfullName");
+    if (!expRegRName.exec(RentName.value)) {
+        alert("Only write letters.");
+        return false;
+    } else {
+        return true;
+
+    }
+}
